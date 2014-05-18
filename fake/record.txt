@@ -1,0 +1,1 @@
+cookie-cname: dyc<br> urlparam: cname=dyc; trival_k=trival_v

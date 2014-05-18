@@ -1,19 +1,5 @@
 <?php
-function printl($var, $br=true) {
-    $str .= "";
-    if ($br) {
-        $str .= "<br><br>";
-    }
-    if (gettype($var) === "boolean" && $var) {
-        $str .= "true";
-    } else if (is_bool($var) && !$var) {
-        $str .= "false";
-    } else {
-        $str .= $var;
-    }
-    $str .= "<br>";
-    print $str;
-}
+include "common.php";
 
 function foo(&$var) { }
 printl("when be referred, variable is created and assigned to null: ");
@@ -54,4 +40,5 @@ $bb = 2;
 printl("aa = $aa, bb = $bb");
 unset($aa);
 printl("aa = $aa, bb = $bb", false);
+
 ?>

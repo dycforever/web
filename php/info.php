@@ -1,5 +1,6 @@
 <?php
 #phpinfo();
+include "common.php";
 printl("=========  php start  =========");
 
 class MyObject {
@@ -8,13 +9,6 @@ class MyObject {
     public function __toString() {
         return "I am {$this->name}\n";
     }
-}
-
-function printl($string) {
-    $str .= "<br><br>";
-    $str .= $string;
-    $str .= "<br>";
-    print $str;
 }
 
 # $array in "" seems strange
